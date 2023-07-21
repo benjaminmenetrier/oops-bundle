@@ -38,14 +38,15 @@ ecbuild_bundle( PROJECT atlas    GIT "https://github.com/ecmwf/atlas.git" TAG 0.
 
 # OOPS
 #ecbuild_bundle( PROJECT oops    GIT "https://git.ecmwf.int/scm/oops/oops" BRANCH feature/develop-IFS )
-ecbuild_bundle( PROJECT oops    GIT "https://git.ecmwf.int/scm/~sbbp/oops" BRANCH feature/saber_interface )
+ecbuild_bundle( PROJECT oops    GIT "https://git.ecmwf.int/scm/~sbbp/oops" BRANCH feature/saber_interface_without_oopsjedi )
 
-# OOPS-JEDI
-ecbuild_bundle( PROJECT oopsjedi GIT "https://github.com/benjaminmenetrier/oopsjedi" BRANCH develop )
+# OOPS-PATCH
+ecbuild_bundle( PROJECT oops_patch )
 
 # JCSDA background error covariance libraries
-ecbuild_bundle( PROJECT gsibec   GIT "https://github.com/geos-esm/GSIbec" TAG 1.1.3 UPDATE )
-ecbuild_bundle( PROJECT vader    GIT "https://github.com/benjaminmenetrier/vader.git" BRANCH feature/saber_for_ecmwf UPDATE )
-ecbuild_bundle( PROJECT saber    GIT "https://github.com/benjaminmenetrier/saber.git" BRANCH feature/saber_for_ecmwf UPDATE )
+#ecbuild_bundle( PROJECT gsibec   GIT "https://github.com/geos-esm/GSIbec" TAG 1.1.3 UPDATE )
+#ecbuild_bundle( PROJECT vader    GIT "https://github.com/benjaminmenetrier/vader.git" BRANCH feature/saber_for_ecmwf UPDATE )
+#ecbuild_bundle( PROJECT saber    GIT "https://github.com/benjaminmenetrier/saber.git" BRANCH feature/saber_for_ecmwf UPDATE )
+ecbuild_bundle( PROJECT saber    GIT "https://github.com/benjaminmenetrier/saber.git" BRANCH feature/saber_for_ecmwf_without_oopsjedi UPDATE )
 
 ecbuild_bundle_finalize()
