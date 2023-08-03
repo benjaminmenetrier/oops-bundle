@@ -45,7 +45,7 @@ ecbuild_bundle( PROJECT oops_patch )
 
 # JCSDA background error covariance libraries
 #ecbuild_bundle( PROJECT gsibec   GIT "https://github.com/geos-esm/GSIbec" TAG 1.1.3 UPDATE )
-#ecbuild_bundle( PROJECT vader    GIT "https://github.com/benjaminmenetrier/vader.git" BRANCH feature/saber_for_ecmwf UPDATE )
+ecbuild_bundle( PROJECT vader    GIT "https://github.com/benjaminmenetrier/vader.git" BRANCH feature/saber_for_ecmwf_without_oopsjedi UPDATE )
 #ecbuild_bundle( PROJECT saber    GIT "https://github.com/benjaminmenetrier/saber.git" BRANCH feature/saber_for_ecmwf UPDATE )
 ecbuild_bundle( PROJECT saber    GIT "https://github.com/benjaminmenetrier/saber.git" BRANCH feature/saber_for_ecmwf_without_oopsjedi UPDATE )
 
