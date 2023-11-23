@@ -36,9 +36,8 @@ ecbuild_bundle( PROJECT atlas    GIT "https://github.com/ecmwf/atlas.git" TAG 0.
 ecbuild_bundle( PROJECT oops )
 
 # ECSABER
-ecbuild_bundle( PROJECT ecsaber  GIT "https://github.com/benjaminmenetrier/ecsaber.git" BRANCH develop UPDATE RECURSIVE )
-ecbuild_bundle( PROJECT ecsaber/oops-patch )
-ecbuild_bundle( PROJECT ecsaber/vader )
-ecbuild_bundle( PROJECT ecsaber/saber )
+#ecbuild_bundle( PROJECT ecsaber  GIT "https://github.com/benjaminmenetrier/ecsaber.git" BRANCH develop UPDATE RECURSIVE )
+#ecbuild_bundle( PROJECT ecsaber  GIT "https://github.com/benjaminmenetrier/ecsaber.git" BRANCH feature/sqrt+fastLAM UPDATE RECURSIVE )
+ecbuild_bundle( PROJECT ecsaber )
 
 ecbuild_bundle_finalize()
